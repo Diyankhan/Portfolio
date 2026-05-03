@@ -1,28 +1,26 @@
-const transporter = require("../config/nodemailer");
+require("dotenv").config();
 const expressError = require("../expressError");
 const { mailValidation } = require("../middleware/validation");
 const wrapAsync = require("../middleware/wrapAsync");
-exports.sendMail = wrapAsync(async (req, res) => {
-  try {
-    await mailValidation.validateAsync(req.body);
+const { Resend } = require("resend");
 
-    let { name, lastName, mail, sub, msg } = req.body;
+const resend = new Resend(process.env.MAIL_API);
 
-    await transporter.sendMail({
-      from: `${name} <diyankhan33@gmail.com>`,
-      to: "diyankhan33@gmail.com",
-      replyTo: mail,
-      subject: sub,
-      text: `Name: ${name} ${lastName}\nFrom: ${mail}\nMessage: ${msg}`,
-    });
-
-    return res.status(201).json({
-      success: true,
-      message: "Mail sent successfully",
-    });
-
-  } catch (err) {
-    console.log("REAL ERROR:", err); 
-    throw new expressError(500, "Mail failed")
+exports.sendEmail = wrapAsync(async (req, res) => {
+  await mailValidation.validateAsync(req.body);
+  let { name, lastName, mail, sub, msg } = req.body;
+  const data = await resend.emails.send({
+    from: "onboarding@resend.dev",
+    to: "diyankhan33@gmail.com",
+    reply_to: mail,
+    subject: sub,
+    text: `Name: ${name} ${lastName}\nFrom: ${mail}\nMessage: ${msg}`,
+  });
+  if (!data || data.error) {
+    throw new expressError(500, "Mail failed");
   }
+  return res.status(200).json({
+    success: true,
+    message: "Mail sent successfully",
+  });
 });

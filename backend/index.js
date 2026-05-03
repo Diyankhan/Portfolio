@@ -7,7 +7,6 @@ const projectRoutes = require("./routes/projectRoutes");
 const contactRoutes = require("./routes/contactRoutes");
 const certificateRoutes = require("./routes/certificateRoutes");
 const isLoggedIn = require("./routes/authenticateRoutes");
-const limiter = require("./middleware/mailLimit");
 const PORT = process.env.PORT || 3000;
 const passport = require("passport");
 const LocalStrategy = require("passport-local");
@@ -46,7 +45,7 @@ app.get("/", (req, res) => {
 
 app.use("/projects", projectRoutes);
 
-app.use("/contact",contactRoutes);
+app.use("/contact", contactRoutes);
 
 app.use("/certificates", certificateRoutes);
 
