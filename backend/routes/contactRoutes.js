@@ -1,8 +1,8 @@
-const express = require("express");
-const router = express.Router();
-const { sendMail } = require("../controllers/contactController");
-const {mailValidation} = require("../middleware/validation");
+    const express = require("express");
+    const router = express.Router();
+    const { sendMail } = require("../controllers/contactController");
+    const {mailValidation} = require("../middleware/validation");
 
-router.route("/").post(sendMail);
+    router.route("/").post(sendMail);
 
-module.exports = router;
+    module.exports = router;
