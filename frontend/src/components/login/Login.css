@@ -1,0 +1,10 @@
+.show-line {
+  rotate: -35deg;
+  color: black;
+  font-size: 35px;
+  display: block;
+}
+
+.hide-line {
+  display: none;
+}

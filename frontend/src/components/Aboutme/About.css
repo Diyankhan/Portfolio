@@ -1,0 +1,110 @@
+@media screen and (min-width: 600px) {
+  .profile-heading {
+    font-size: 70px !important;
+  }
+}
+
+.profile-heading {
+  font-size: 40px;
+}
+
+.slide-content li {
+  list-style: none;
+}
+
+.slide-content p {
+  color: #22bd87;
+}
+
+.content h3 {
+  cursor: pointer;
+}
+
+.skills-section {
+  background: #112b3c;
+}
+.badges {
+  background: #1e293b;
+  color: #e2e8f0;
+  cursor: default;
+}
+
+/* Java */
+.fa-java {
+  color: #f89820;
+}
+
+/* Python */
+.fa-python {
+  background-image: linear-gradient(10deg, #306998 50%, #ffe873 50%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Bootstrap */
+.fa-bootstrap {
+  color: #6f2cf5;
+}
+
+/* Node.js and express */
+.fa-node,
+.fa-node-js {
+  color: #37a533;
+}
+
+/* MongoDb */
+.fa-database {
+  color: #4db33d;
+}
+
+/* Numpy */
+.fa-table {
+  background: linear-gradient(45deg, #013243, #4dabf7);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* OOP */
+.fa-cube {
+  background-image: linear-gradient(145deg, #0a8cf7 50%, #ffffff 50%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Pandas */
+.fa-paw {
+  background: linear-gradient(45deg, #150458, #2ecc71);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* git */
+.fa-git-alt {
+  color: #f34e27;
+}
+
+/* Postman */
+.fa-envelope {
+  color: #ff6c37;
+}
+
+/* cloudinary */
+.fa-cloud {
+  background: linear-gradient(45deg, #3549c5, #6d78bd);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* render and api */
+.fa-server,
+.fa-gear {
+  background: linear-gradient(45deg, #0d6efd, #0dcaf0);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.owner-name {
+  background : linear-gradient(to right, #3B82F6, #22D3EE);
+  background-clip : text;
+  -webkit-text-fill-color: transparent;
+}

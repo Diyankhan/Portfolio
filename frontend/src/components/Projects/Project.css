@@ -1,0 +1,13 @@
+.project-title {
+    line-height: 10px;
+}
+
+.about-para {
+    overflow-wrap: break-word;
+}   
+
+.project-link {
+    background : linear-gradient(to right, rgb(0, 247, 255) , rgb(232, 177, 23));
+    background-clip : text;
+    color : transparent;
+}

@@ -1,0 +1,39 @@
+.my-img {
+    height : auto;
+    width : 300px;
+}
+
+@media screen and (min-width : 998px) {
+    .HeroPage {
+        padding : 100px 0 100px 0;
+    }
+}
+
+
+.headings p{
+    font-size : 22px;
+}
+
+.Recent {
+    background-color: #EDF7FA;
+    color: #e2e8f0;
+}
+
+.heading-post {
+    color : black;
+}
+
+.posts {
+    background-color: #0f172a;
+}
+
+
+.year {
+    background-color: #142850;
+    color : white;
+    font-weight : bold;
+}
+
+.about-para {
+    overflow-wrap: break-word;
+}
