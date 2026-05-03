@@ -20,7 +20,7 @@ function App() {
 
   useEffect(() => {
     const protectRoutes = async () => {
-      const res = await axios.get("http://localhost:8080/auth", {
+      const res = await axios.get("https://portfolio-73tn.onrender.com//auth", {
         withCredentials: true,
       });
       setIsAuth(res.data.login);
