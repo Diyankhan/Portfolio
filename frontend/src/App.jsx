@@ -9,7 +9,7 @@ import AddProjects from "./components/Projects/Project.jsx";
 import DetailedProject from "./components/Projects/DetailedProject.jsx";
 import Protection from "./components/Protection/Protection.jsx";
 
-import Footer from "./footer.jsx";
+import Footer from "./Footer.jsx";
 import { Routes, Route } from "react-router-dom";
 import Login from "./components/login/Login.jsx";
 import { useEffect, useState } from "react";
