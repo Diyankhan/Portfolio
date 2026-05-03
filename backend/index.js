@@ -23,7 +23,7 @@ app.listen(PORT, () => {
 
 app.use(
   cors({
-    origin: "https://portfolio-ten-beta-3kwdg91ega.vercel.app/",
+    origin: "https://portfolio-ten-beta-3kwdg91ega.vercel.app",
     credentials: true,
   }),
 );
