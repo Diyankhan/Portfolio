@@ -46,7 +46,7 @@ app.get("/", (req, res) => {
 
 app.use("/projects", projectRoutes);
 
-app.use("/contact", limiter, contactRoutes);
+app.use("/contact",contactRoutes);
 
 app.use("/certificates", certificateRoutes);
 
