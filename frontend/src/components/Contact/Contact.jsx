@@ -26,7 +26,7 @@ function Contact() {
     } catch (err) {
       setShowNoti(true);
       setNotiColor(false);
-      setMsg(err.response.data.message);
+      setMsg(err.response?.data?.message || "Something went wrong");
     } finally {
       setTimeout(() => {
         setShowNoti(false);
