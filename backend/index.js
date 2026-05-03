@@ -23,7 +23,7 @@ app.listen(PORT, () => {
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://portfolio-ten-beta-3kwdg91ega.vercel.app/",
     credentials: true,
   }),
 );
