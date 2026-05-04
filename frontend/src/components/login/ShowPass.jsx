@@ -1,7 +1,7 @@
-
 import "./Login.css";
-import { motion } from "motion/react";
 function ShowPass({ showPass, setShowPass }) {
+  let hide = "https://img.icons8.com/material/24/hide--v1.png";
+  let show = "https://img.icons8.com/material/24/visible--v1.png";
   const toggleBtn = () => {
     setShowPass((prev) => {
       return prev === "password" ? "text" : "password";
@@ -9,12 +9,14 @@ function ShowPass({ showPass, setShowPass }) {
   };
   return (
     <>
-      <i
-        className="fa-solid fa-eye position-absolute me-3 fs-5 z-1"
-        style={{ color: "black" }}
-        onClick={toggleBtn}></i>
-      <i
-        className={`fa-solid fa-minus position-absolute me-2 fs-2 ${showPass === "text" ? "hide-line" : "show-line"}`}></i>
+      <img
+        width="24"
+        height="24"
+        src={`${showPass === "text" ? show : hide}`}
+        alt="hide--v1"
+        className="position-absolute me-3"
+        onClick={toggleBtn}
+      />
     </>
   );
 }
