@@ -118,7 +118,7 @@ function Login({ setIsAuth }) {
               loadingPosition="end"
               variant="contained"
               className="mt-2">
-              Send
+              Submit
             </Button>
           </form>
         </div>
