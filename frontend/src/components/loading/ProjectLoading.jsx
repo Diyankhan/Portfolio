@@ -4,7 +4,7 @@ function ProjectLoading() {
       className="card"
       aria-hidden="true"
       style={{ backgroundColor: "transparent" }}>
-      <div className="d-flex align-items-center p-3 placeholder-glow">
+      <div className="d-flex align-items-center p-3 placeholder-glow flex-coloumn flex-md-row">
         {/* Image on side */}
         <div
           className="placeholder me-3"
